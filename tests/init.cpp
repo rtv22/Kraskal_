@@ -5,8 +5,8 @@
 #include <algorithm>
 
 SCENARIO("algorithm", "[algorithm]"){
-	Graph test;
-	REQUIRE(test.count() == 0);
+	Graph test_;
+	REQUIRE(test_.count() == 0);
 }
 
 SCENARIO("algorithm", "[algorithm]"){
