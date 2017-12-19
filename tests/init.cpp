@@ -9,7 +9,8 @@ SCENARIO("algorithm", "[algorithm]"){
 	REQUIRE(test_.count() == 0);
 }
 
-SCENARIO("algorithm", "[algorithm]"){
+/*SCENARIO("algorithm", "[algorithm]")
+{
 	Graph test(6);
 	test.AddWeightedEdge(0, 1, 6);
 	test.AddWeightedEdge(0, 2, 1);
