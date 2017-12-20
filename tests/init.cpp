@@ -22,11 +22,9 @@ SCENARIO("algorithm", "[algorithm]"){
 	test.AddWeightedEdge(2, 1, 4);		//			         3				  3
 	test.AddWeightedEdge(2, 3, 5);		//								  
 	vector<pair<int, edge>> k; 
-	k.push_back(make_pair(1, edge(0, 2)));
-	k.push_back(make_pair(2, edge(3, 5)));
-	k.push_back(make_pair(3, edge(1, 4)));
-	k.push_back(make_pair(4, edge(2, 5)));
-	k.push_back(make_pair(5, edge(1, 2)));
+	k.push_back(make_pair(4, edge(0, 2)));
+	k.push_back(make_pair(1, edge(0, 1)));
+	k.push_back(make_pair(2, edge(1, 3)));
 	REQUIRE((k == test.kraskal()) == true);
 }
 
