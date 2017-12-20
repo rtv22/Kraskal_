@@ -30,7 +30,7 @@ SCENARIO("algorithm", "[algorithm]"){
 	REQUIRE((k == test.kraskal()) == true);
 }
 
-SCENARIO("algorithm", "[algorithm]"){
+SCENARIO("algorithm_1", "[algorithm_1]"){
 	Graph test_(6);
 	test_.AddWeightedEdge(0, 1, 6);
 	test_.AddWeightedEdge(0, 2, 1);
