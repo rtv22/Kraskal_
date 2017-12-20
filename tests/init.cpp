@@ -12,7 +12,7 @@ SCENARIO("init", "[init]"){
 SCENARIO("algorithm", "[algorithm]"){
 	Graph test(4);
 	test.AddWeightedEdge(0, 1, 1);			////   (1)-вес			 0                            0
-	test.AddWeightedEdge(0, 2, 4);			////    1- вершина графа	        /| \			     / \
+	test.AddWeightedEdge(0, 2, 4);			////    1- вершина графа        /| \			     / \
 	test.AddWeightedEdge(0, 3, 3);			////			    (1)/ |  \(4)	        (4) /   \(1)
 	test.AddWeightedEdge(1, 0, 1);			////			      /	 |   \			   /     \
 	test.AddWeightedEdge(1, 3, 2);			////			     1   |    2       -------->   2       1   
