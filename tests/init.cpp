@@ -11,16 +11,16 @@ SCENARIO("init", "[init]"){
 
 SCENARIO("algorithm", "[algorithm]"){
 	Graph test(4);
-	test.AddWeightedEdge(0, 1, 1);			//   (1)-вес			 0                            0
-	test.AddWeightedEdge(0, 2, 4);			//    1- вершина графа	        /| \			     / \
-	test.AddWeightedEdge(0, 3, 3);			//			    (1)/ |  \(4)	        (4) /   \(1)
-	test.AddWeightedEdge(1, 0, 1);			//			      /	 |   \			   /     \
-	test.AddWeightedEdge(1, 3, 2);			//			     1   |    2       -------->   2       1   
-	test.AddWeightedEdge(3, 0, 3);			//			      \  |(3)/				  |
-	test.AddWeightedEdge(3, 1, 2);			//			    (2)\ |  /(5)                          |(2)
-	test.AddWeightedEdge(3, 2, 5);			//		                \| /                              |
-	test.AddWeightedEdge(2, 1, 4);			//			         3				  3
-	test.AddWeightedEdge(2, 3, 5);			//								  
+	test.AddWeightedEdge(0, 1, 1);			////   (1)-вес			 0                            0
+	test.AddWeightedEdge(0, 2, 4);			////    1- вершина графа	        /| \			     / \
+	test.AddWeightedEdge(0, 3, 3);			////			    (1)/ |  \(4)	        (4) /   \(1)
+	test.AddWeightedEdge(1, 0, 1);			////			      /	 |   \			   /     \
+	test.AddWeightedEdge(1, 3, 2);			////			     1   |    2       -------->   2       1   
+	test.AddWeightedEdge(3, 0, 3);			////			      \  |(3)/				  |
+	test.AddWeightedEdge(3, 1, 2);			////			    (2)\ |  /(5)                          |(2)
+	test.AddWeightedEdge(3, 2, 5);			////		                \| /                              |
+	test.AddWeightedEdge(2, 1, 4);			////			         3				  3
+	test.AddWeightedEdge(2, 3, 5);									  
 	vector<pair<int, edge>> k; 
 	k.push_back(make_pair(1, edge(0, 1)));
 	k.push_back(make_pair(2, edge(1, 3)));
