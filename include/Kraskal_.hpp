@@ -46,8 +46,6 @@ Graph::Graph(int n) {
 
 Graph::~Graph()
 {
-	n = 0;
-	parent = 0;
 	delete[] parent;
 }
 
