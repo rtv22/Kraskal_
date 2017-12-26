@@ -65,5 +65,5 @@ SCENARIO("algorithm_1", "[algorithm_1]"){
 	k.push_back(make_pair(1, edge(4, 5)));
 	k.push_back(make_pair(3, edge(3, 6)));
 	k.push_back(make_pair(7, edge(7, 6)));
-	REQUIRE (test == test_.kraskal());
+	REQUIRE (k == test.kraskal());
 }
