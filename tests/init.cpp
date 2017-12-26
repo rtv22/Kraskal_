@@ -9,7 +9,7 @@ SCENARIO("init", "[init]"){
 	REQUIRE(test_.count() == 0);
 }
 
-SCENARIO("algorithm", "[algorithm]"){
+SCENARIO("algorithm_1", "[algorithm_1]"){
 	Graph test(4);
 	test.AddWeightedEdge(0, 1, 1);			
 	test.AddWeightedEdge(0, 2, 4);			
@@ -25,7 +25,7 @@ SCENARIO("algorithm", "[algorithm]"){
 	REQUIRE (k == test.kraskal());
 }
 
-SCENARIO("algorithm_1", "[algorithm_1]"){
+SCENARIO("algorithm_2", "[algorithm_2]"){
 	Graph test_(6);
 	test_.AddWeightedEdge(0, 1, 6);
 	test_.AddWeightedEdge(0, 2, 1);
@@ -46,7 +46,7 @@ SCENARIO("algorithm_1", "[algorithm_1]"){
 	REQUIRE (k == test_.kraskal());
 }	
 
-SCENARIO("algorithm_1", "[algorithm_1]"){
+SCENARIO("algorithm_3", "[algorithm_3]"){
 	Graph test(100);
 	for (int i = 0; i < 5; i++)
 	{
