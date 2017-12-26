@@ -68,7 +68,7 @@ SCENARIO("algorithm_3", "[algorithm_3]"){
 	REQUIRE (k == test.kraskal());
 }
 
-SCENARIO("algorithm_3", "[algorithm_3]"){
+SCENARIO("algorithm_4", "[algorithm_4]"){
 	Graph test(1020);
 	for (int i = 0; i < 500; i++)
 	{
