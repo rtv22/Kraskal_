@@ -69,7 +69,7 @@ SCENARIO("algorithm_3", "[algorithm_3]"){
 }
 
 SCENARIO("algorithm_4", "[algorithm_4]"){
-	Graph test(1020);
+	Graph test(600);
 	for (int i = 0; i < 500; i++)
 	{
 		test.AddWeightedEdge(i + 1, 500 - i, 2);
