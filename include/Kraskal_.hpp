@@ -33,10 +33,15 @@ int Graph::count()
 }
 
 Graph::Graph(int n) {
-	parent = new int[n];
-	for (int i = 0; i < n; i++)
+	try
+	{
+		parent = new int[n];
+		for (int i = 0; i < n; i++)
 		parent[i] = i;
-	delete[] parent;
+	}
+	catch (...){
+		delete[] parent;
+	}
 } 
 
 Graph::~Graph()
