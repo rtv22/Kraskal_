@@ -67,3 +67,33 @@ SCENARIO("algorithm_3", "[algorithm_3]"){
 	k.push_back(make_pair(7, edge(7, 6)));
 	REQUIRE (k == test.kraskal());
 }
+
+SCENARIO("algorithm_3", "[algorithm_3]"){
+	Graph test(1020);
+	for (int i = 0; i < 500; i++)
+	{
+		test.AddWeightedEdge(i + 1, 500 - i, 2);
+		test.AddWeightedEdge(i, i + 1, 3);
+	}
+	for (int i = 0; i < 100; i++)
+	{
+		test.AddWeightedEdge(i, i + 3, 1);
+	}
+	
+	vector<pair<int, edge>> k;
+	for (int i = 0; i < 100; i++)
+	{
+		k.push_back(make_pair(1, edge(i, (i + 3))));
+	}
+	for (int i = 1; i < 251; i++)
+	{
+		k.push_back(make_pair(2, edge(i, (501 - i))));
+	}
+	k.push_back(make_pair(3, edge(0, 1)));
+	k.push_back(make_pair(3, edge(1, 2)));
+	for (int i = 102; i < 250; i++)
+	{
+		k.push_back(make_pair(3, edge(i, (i + 1))));
+	}
+	REQUIRE (k == test.kraskal());
+}
